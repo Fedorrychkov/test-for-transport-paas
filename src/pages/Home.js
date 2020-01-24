@@ -27,7 +27,7 @@ const styles = theme => ({
 
 const Home = withStyles(styles)((props: Object) => {
   const { classes } = props;
-  const [isOpen, { toggleState }] = useBoolState(true);
+  const [isOpen, { toggleState }] = useBoolState();
   const [values, setValues] = useState({})
 
   useEffect((e) => {
